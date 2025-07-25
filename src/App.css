@@ -98,76 +98,23 @@
 }
 
 /* ===== TABLET STYLES (768px and up) ===== */
-@media (min-width: 768px) {
-  .heading-1 { 
-    font-size: 150px; 
-    line-height: 150px;
-  }
-  
-  .heading-2 { 
-    font-size: 80px;
-    line-height: 92px;
-  }
-  
-  .heading-3 { 
-    font-size: 40px;
-    line-height: 46px;
-  }
-  
-  .heading-4 { 
-    font-size: 24px;
-    line-height: 28px;
-  }
-  
-  .heading-5 {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 3.38px;
-  }
-  
-  .body-text { 
-    font-size: 16px;
-    line-height: 28px;
-  }
+
+@utility bg-home-mobile {
+  background-image: url('/Home.png');
 }
 
-/* ===== DESKTOP STYLES (1024px and up) ===== */
-@media (min-width: 1024px) {
-  .heading-1 { 
-    font-size: 144px;
-    line-height: 172px;
-  }
-  
-  .heading-2 { 
-    font-size: 100px;
-    line-height: 115px;
-  }
-  
-  .heading-3 { 
-    font-size: 56px;
-    line-height: 64px;
-  }
-  
-  .heading-4 { 
-    font-size: 32px;
-    line-height: 37px;
-  }
-  
-  .heading-5 {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.72px;
-  }
-  
-  .body-text { 
-    font-size: 18px;
-    line-height: 32px;
-  }
+@utility bg-home-desktop {
+  background-image: url('/Home-lg.jpg');
 }
-
 /* ===== BASE STYLES ===== */
 body {
+  min-height: 100vh;
   background-color: #0B0D17;
   color: #FFFFFF;
+  box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
+  background-image: url('./Bitmap.jpg');
+  object-fit: contain;
+  max-width: 100%;
+  background-repeat: no-repeat;
 }
