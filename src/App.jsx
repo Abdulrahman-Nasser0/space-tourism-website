@@ -1,19 +1,23 @@
-
 import './App.css'
 import ExploreBtn from './components/common/ExploreBtn'
 import Navbar from './components/layout/Navbar'
 import Hero from './components/layout/Hero'
-import Container from './components/common/Container'
+
 
 function App() {
   
   return (
-    <Container>
-      <div className='col-span-4 md:col-span-8 lg:col-span-12 flex flex-col min-h-screen'>
-        <Navbar/>
-        <Hero/>
-      </div>
-    </Container>
+    <div
+      className="
+        flex flex-col 
+        min-h-screen bg-black
+        bg-[url('/Home.png')] lg:bg-[url('/Home-lg.jpg')]
+        bg-cover bg-center bg-no-repeat
+      ">
+
+        <Navbar />
+        <Hero />
+    </div>
   )
 }
 

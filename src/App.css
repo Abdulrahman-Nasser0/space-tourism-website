@@ -13,24 +13,7 @@
 .font-barlow { font-family: 'Barlow', sans-serif; }
 .font-barlow-condensed { font-family: 'Barlow Condensed', sans-serif; }
 
-/* ===== TYPOGRAPHY PRESETS - Mobile First ===== */
-/* Text Preset 1 - Main Heading */
-.heading-1 {
-  font-family: 'Bellefair', serif;
-  font-size: 80px;
-  line-height: 100px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 
-/* Text Preset 2 - Section Heading */
-.heading-2 {
-  font-family: 'Bellefair', serif;
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 
 /* Text Preset 3 - Sub Heading */
 .heading-3 {
@@ -41,80 +24,14 @@
   text-transform: uppercase;
 }
 
-/* Text Preset 4 - Card Heading */
-.heading-4 {
-  font-family: 'Bellefair', serif;
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-/* Text Preset 5 - Barlow Condensed Regular */
-.heading-5 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-}
-
-/* Text Preset 6 - Subheading */
-.subheading-1 { 
-  font-family: 'Bellefair', serif;
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-/* Text Preset 7 - Nav Text */
-.nav-text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  letter-spacing: 2.36px;
-  text-transform: uppercase;
-}
-
-/* Text Preset 8 - Sub Nav Text */
-.sub-nav-text { 
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-}
-
-/* Text Preset 9 - Body Text */ 
-.body-text {
-  font-family: 'Barlow', sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
-}
 
 /* ===== TABLET STYLES (768px and up) ===== */
 
-@utility bg-home-mobile {
-  background-image: url('/Home.png');
-}
-
-@utility bg-home-desktop {
-  background-image: url('/Home-lg.jpg');
-}
 /* ===== BASE STYLES ===== */
 body {
-  min-height: 100vh;
   background-color: #0B0D17;
   color: #FFFFFF;
   box-sizing: border-box;
-  font-family: 'Barlow', sans-serif;
-  background-image: url('./Bitmap.jpg');
-  object-fit: contain;
-  max-width: 100%;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }

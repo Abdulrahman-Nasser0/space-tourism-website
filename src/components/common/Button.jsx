@@ -13,6 +13,8 @@ const Button = ({text = "MENU", onClick }) => {
         
         md:border-r-0 md:border-b-4
         tracking-[0.125rem]
+        mx-2 whitespace-nowrap
+        md:py-[2.5rem]
       `}>
       {text}
     </button>
@@ -21,13 +23,3 @@ const Button = ({text = "MENU", onClick }) => {
 
 
 export default Button
-
-// sub-nav-text uppercase cursor-pointer text-left w-full py-4
-//         border-r-4 border-b-4
-//         border-transparent
-//         transition-all duration-500 ease-in-out
-
-//         hover:border-white/50 hover:border-r-4  
-        
-//         md:hover:border-b-4 md:hover:border-r-0 md:w-fit
-         

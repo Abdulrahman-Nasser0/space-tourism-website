@@ -1,25 +1,38 @@
 import React from 'react'
 
-const Menu = ({children}) => {
+const Menu = ({children, open, setOpen}) => {
   return (
     <>
       <img 
         src="menu.svg" 
         alt="Menu" 
-        className="block md:hidden cursor-pointer"
+        className={`${open ? 'hidden' : 'block'} z-50 md:hidden cursor-pointer`}
+        onClick={() => setOpen(true)}
+      />
+      <img 
+        src="close.svg" 
+        alt="Close" 
+        className={`${open ? 'block' : 'hidden'} z-50  md:hidden cursor-pointer`}
+        onClick={() => setOpen(false)}
       />
       
-      <nav className="
-      hidden 
-      md:flex md:justify-end md:items-center md:gap-8 basis-2/3
-      backdrop-blur-md
-    bg-white/10
-      
-      ">
+
+      <nav className={`
+          fixed top-0 h-screen w-[70%] z-10
+          flex flex-col gap-8 p-8 pt-24     
+        bg-white/5 backdrop-blur-2xl 
+          transition-all duration-300 ease-in-out
+          ${open ? 'right-0' : '-right-[70%]'}
+       
+          md:static md:w-auto md:h-auto md:translate-x-0 md:flex-row
+          md:justify-end md:items-center md:p-0 md:pt-0
+          md:basis-2/3 md:transition-none
+          
+          `}>
+            
         {children}
       </nav>
     </>
   )
 }
-
 export default Menu
