@@ -27,11 +27,11 @@ const Menu = ({ children, open, setOpen }) => {
       <nav
         className={`
 
-          fixed top-0 h-screen md:flex-1 lg:flex-none lg:min-w-[70%] z-10
+          fixed top-0 h-screen  w-[70%]  md:flex-1 lg:w-[70%] z-10
           flex flex-col gap-8 p-8 pt-24     bg-white/5 backdrop-blur-2xl 
           transition-all duration-300 ease-in-out
           ${open ? "right-0" : "-right-[70%]"}
-       
+          
           md:static md:w-auto md:h-auto md:translate-x-0 md:flex-row
           md:justify-end md:items-center md:p-0 md:pt-0
           md:basis-2/3 md:transition-none

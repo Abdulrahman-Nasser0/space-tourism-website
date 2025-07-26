@@ -1,8 +1,19 @@
 import React from 'react'
+import { useNavigation } from "../NavigationContext";
 
-const ExploreBtn = () => {
+const ExploreBtn = ({onClick}) => {
+    const { handleSectionChange, currentSection } = useNavigation();
+  
   return (
     <button 
+      onClick={() => {
+        handleSectionChange('destination');
+        onClick();
+      }}
+      aria-label="Explore"
+      data-testid="explore-btn"
+      type="button"
+      disabled={currentSection === 'destination'}
     className='
       w-[9rem] h-[9rem] 
       md:w-[17rem] md:h-[17rem] md:text-[2rem]

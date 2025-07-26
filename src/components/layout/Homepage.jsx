@@ -5,6 +5,7 @@ const Hero = () => {
   return (
     <main
       className="
+      animate-[fadeIn_0.5s_ease-in-out]
         flex flex-col justify-center items-center 
         self-stretch flex-1 shrink-0 basis-0  p-6
         md:py-[8rem]
