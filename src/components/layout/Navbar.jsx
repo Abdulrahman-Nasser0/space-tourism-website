@@ -1,21 +1,22 @@
 import React, { useState } from 'react'
 import Logo from '../common/Logo'
 import Menu from '../common/Menu'
-import Button from '../common/Button'
+import NavButton from '../common/NavButton'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   
+  const handleCloseMenu = () => setMenuOpen(false);
 
   return (
     <nav className='flex justify-between p-6 md:p-0 relative'>
-            <Logo/>
-            <Menu open={menuOpen} setOpen={setMenuOpen}>
-              <Button text={'00 Home'}/>
-              <Button text={'01 Destination'}/>
-              <Button text={'02 Crew'}/>
-              <Button text={'03 Technology'}/>
-            </Menu>
+      <Logo/>
+      <Menu open={menuOpen} setOpen={setMenuOpen}>
+        <NavButton text={'00 Home'} handleCloseMenu={handleCloseMenu}/>
+        <NavButton text={'01 Destination'} handleCloseMenu={handleCloseMenu}/>
+        <NavButton text={'02 Crew'} handleCloseMenu={handleCloseMenu}/>
+        <NavButton text={'03 Technology'} handleCloseMenu={handleCloseMenu}/>
+      </Menu>
     </nav>
   )
 }
