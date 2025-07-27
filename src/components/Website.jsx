@@ -3,6 +3,7 @@ import { useNavigation } from "./NavigationContext";
 import Navbar from "./layout/Navbar";
 import Homepage from "./layout/Homepage";
 import Destination from "./layout/Destination";
+import Technology from "./layout/Technology";
 import Crew from "./layout/Crew";
 
 const Website = () => {
@@ -28,7 +29,7 @@ const Website = () => {
         }
         ${
           currentSection === "technology" &&
-          'bg-[url("/Technology.png")] lg:bg-[url("/Technology-lg.jpg")]'
+          'bg-[url("/Technology.jpg")]'
         }
         bg-cover bg-center bg-no-repeat
       `}

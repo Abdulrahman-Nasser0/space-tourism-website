@@ -18,7 +18,7 @@ const PureButton = ({
     navigation: `
       text-left w-full md:w-fit 
       border-r-4 md:border-r-0 md:border-b-4
-      h-[4rem] 
+      h-[2.5rem] md:h-[4rem]
       ${isActive ? "border-white" : "border-transparent hover:border-white/50"}
     `,
     tab: `

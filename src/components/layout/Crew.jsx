@@ -8,7 +8,7 @@ const Crew = () => {
   return (
     <div
       className="
-      animate-[fadeIn_0.5s_ease-in-out]
+            animate-[fadeIn_0.5s_ease-in-out]
             flex flex-col gap-6 p-6
             md:p-10
             lg:p-12 lg:max-w-[95%] lg:mx-auto 
