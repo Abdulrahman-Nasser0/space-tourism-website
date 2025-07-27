@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { useNavigation } from "./NavigationContext";
 import Navbar from "./layout/Navbar";
-import Homepage from "./layout/Homepage";
-import Destination from "./layout/Destination";
-import Technology from "./layout/Technology";
-import Crew from "./layout/Crew";
+
+const Homepage = lazy(() => import("./layout/Homepage"));
+const Destination = lazy(() => import("./layout/Destination"));
+const Technology = lazy(() => import("./layout/Technology"));
+const Crew = lazy(() => import("./layout/Crew"));
 
 const Website = () => {
   const { currentSection } = useNavigation();
@@ -17,28 +18,30 @@ const Website = () => {
         min-h-screen bg-black
         ${
           currentSection === "home" &&
-          'bg-[url("/Home.png")] lg:bg-[url("/Home-lg.jpg")]'
+          'bg-[url("/Home.webp")] lg:bg-[url("/Home-lg.webp")]'
         }
         ${
           currentSection === "destination" &&
-          'bg-[url("/Destination.png")]'
+          'bg-[url("/Destination.webp")]'
         }
         ${
           currentSection === "crew" &&
-          'bg-[url("/Crew.jpg")]'
+          'bg-[url("/Crew.webp")]'
         }
         ${
           currentSection === "technology" &&
-          'bg-[url("/Technology.jpg")]'
+          'bg-[url("/Technology.webp")]'
         }
         bg-cover bg-center bg-no-repeat
       `}
     >
       <Navbar />
+      <Suspense fallback={<div className="flex-1 flex items-center justify-center text-white">Loading...</div>}>
         {currentSection === "home" && <Homepage />}
         {currentSection === "destination" && <Destination />}
         {currentSection === "crew" && <Crew />}
         {currentSection === "technology" && <Technology />}
+      </Suspense>
     </div>
   );
 };
