@@ -2,6 +2,9 @@
 
 A modern, responsive React application showcasing space tourism destinations, crew members, and cutting-edge technology. Built with React 19, Tailwind CSS, and Vite for optimal performance and user experience.
 
+## 🌐 Live Demo
+**👉 [View Live Website](https://space-website-challenge.netlify.app/)**
+
 ![Space Tourism Website](https://img.shields.io/badge/React-19.1.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4.1.11-38bdf8)
 ![Vite](https://img.shields.io/badge/Vite-7.0.4-646cff)
