@@ -37,15 +37,17 @@ const Destination = () => {
         "
       >
         {/* Animated image */}
-        <div
-          key={`image-${selectedDestination}`}
-          className="min-w-[14.284rem] h-[14.284rem] mb-1.5 md:min-w-[28.56744rem] md:h-[28.56744rem] lg:min-w-[50%] lg:h-[28.56744rem] animate-[fadeIn_0.7s_ease-in-out]"
-        >
-          <img
-            className="w-full h-full object-contain"
-            src={destinationData.image}
-            alt={destinationData.name}
-          />
+        <div className="lg:w-[20rem]">
+          <div
+            key={`image-${selectedDestination}`}
+            className="min-w-[14.284rem] h-[14.284rem] mb-1.5 md:min-w-[28.56744rem] md:h-[28.56744rem] lg:min-w-[50%] lg:h-[28.56744rem] animate-[fadeIn_0.7s_ease-in-out]"
+          >
+            <img
+              className="w-full h-full object-contain"
+              src={destinationData.image}
+              alt={destinationData.name}
+            />
+          </div>
         </div>
 
         {/* explanation */}
@@ -78,7 +80,7 @@ const Destination = () => {
             />
           </nav>
           {/* Animated content */}
-          <div 
+          <div
             key={`content-${selectedDestination}`}
             className="flex flex-col items-center gap-4 animate-[fadeIn_0.7s_ease-in-out]"
           >
